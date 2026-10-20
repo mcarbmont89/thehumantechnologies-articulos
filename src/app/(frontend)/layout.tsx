@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="top">
           <div className="wrap nav">
-            <a className="brand" href={MAIN_SITE} aria-label="Human Technologies, inicio">
+            <a className="brand" href={`${MAIN_SITE}/`} aria-label="Human Technologies, inicio">
               <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true">
                 <circle cx="19" cy="6" r="3.6" fill="#fff" />
                 <path d="M5 5l9 9m-2 14l3-12 8-8" stroke="#fff" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -33,10 +33,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </svg>
               Human Technologies
             </a>
-            <nav>
-              <a href="/">Artículos</a>
-              <a className="btn" href={`${MAIN_SITE}/#contacto`}>Contáctenos</a>
-            </nav>
+            <ul>
+              <li><a href={`${MAIN_SITE}/#planta`}>Planta</a></li>
+              <li><a href={`${MAIN_SITE}/#equipos`}>Personas</a></li>
+              <li><a href={`${MAIN_SITE}/#resultados`}>Finanzas</a></li>
+              <li><a href="/" aria-current="page">Artículos</a></li>
+              <li><a href={`${MAIN_SITE}/#humantechnologies`}>Human Technologies</a></li>
+            </ul>
+            <a className="btn" href={`${MAIN_SITE}/#contacto`}>Contáctenos</a>
           </div>
         </header>
         <main>{children}</main>
