@@ -24,6 +24,8 @@ const postgresURL = process.env.DATABASE_URL || process.env.POSTGRES_URL || ''
 // Sitios que pueden leer la API desde el navegador (la landing).
 const allowedOrigins = [
   serverURL,
+  'https://xd.com.gt',
+  'https://www.xd.com.gt',
   'https://www.thehumantechnologies.com',
   'https://thehumantechnologies.com',
   'https://thehumantechnologies.pages.dev',

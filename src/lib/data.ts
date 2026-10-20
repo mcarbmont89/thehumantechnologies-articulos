@@ -5,7 +5,7 @@ import type { Article, Media } from '@/payload-types'
 export const SITE =
   process.env.NEXT_PUBLIC_SERVER_URL ||
   (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000')
-export const MAIN_SITE = process.env.NEXT_PUBLIC_MAIN_SITE_URL || 'https://www.thehumantechnologies.com'
+export const MAIN_SITE = (process.env.NEXT_PUBLIC_MAIN_SITE_URL || 'https://xd.com.gt').replace(/\/+$/, '')
 
 export const TOPICS: Record<string, string> = {
   planta: 'Planta',

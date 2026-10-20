@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer>
           <div className="wrap foot">
             <span>© Human Technologies · Guatemala. Todos los derechos reservados.</span>
-            <a href={MAIN_SITE}>thehumantechnologies.com</a>
+            <a href={MAIN_SITE}>{MAIN_SITE.replace(/^https?:\/\//, "").replace(/\/$/, "")}</a>
           </div>
         </footer>
       </body>
